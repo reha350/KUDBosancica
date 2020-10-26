@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import "~react-image-gallery/styles/css/image-gallery.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,11 +8,9 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.gallery-bg {
+.gallery {
   position: relative;
   justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .fab {
