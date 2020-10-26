@@ -1,69 +1,125 @@
 import React from 'react';
 import './App.css';
 import { render } from "react-dom";
-import { ReactPhotoCollage } from "react-photo-collage";
 import kolacijada1 from "./images/kolacijada/1.jpg";
 import kolacijada2 from "./images/kolacijada/2.jpg";
 import kolacijada3 from "./images/kolacijada/3.jpg";
 import kolacijada4 from "./images/kolacijada/4.jpg";
 import { Link } from 'react-router-dom';
 
-const setting = {
-  width: '600px',
-  height: ['350px', '200px'],
-  layout: [1, 2],
-  photos: [
-    { src: 'https://i.ibb.co/fSNyXyy/13.jpg'},
-    { src: 'https://i.ibb.co/r0rw1yv/12.jpg'},
-    { src: 'https://i.ibb.co/RN2jcLN/1.jpg'},
-    { src: 'https://i.ibb.co/WtLXVff/11.jpg'},
-    { src: 'https://i.ibb.co/FbCT0Sz/4.jpg'},
-    { src: 'https://i.ibb.co/ByP3nBP/3.jpg'},
-    { src: 'https://i.ibb.co/9Vfpvzz/9.jpg'},
-    { src: 'https://i.ibb.co/T2909Kw/8.jpg'},
-    { src: 'https://i.ibb.co/LnKdBB9/7.jpg'},
-    { src: 'https://i.ibb.co/FbCT0Sz/4.jpg'}
-  ],
+import ImageGallery from 'react-image-gallery';
 
-showNumOfRemainingPhotos: true
-};
+const images2 =
+[{
+        original: "https://i.ibb.co/6bRn3V2/6.jpg",
+        thumbnail: "https://i.ibb.co/6bRn3V2/6.jpg",
+        
+},
+{
+        original: "https://i.ibb.co/dWcxwL2/3.jpg",
+        thumbnail: "https://i.ibb.co/dWcxwL2/3.jpg",
+        
+},
 
-const setting2 = {
-  width: '600px',
-  height: ['350px', '200px'],
-  layout: [2, 3, 1],
-  photos: [
-    { src: 'https://i.ibb.co/6bRn3V2/6.jpg'}, 
-    { src: 'https://i.ibb.co/dWcxwL2/3.jpg'}, 
-    { src: 'https://i.ibb.co/xDfpr1L/4.jpg'}, 
-    { src: 'https://i.ibb.co/hfqQNKQ/5.jpg'}, 
-    { src: 'https://i.ibb.co/k99F8Vn/8.jpg'}, 
-    { src: 'https://i.ibb.co/2q7k9nM/7.jpg'},
-    { src: 'https://i.ibb.co/CzVC7Dt/1.jpg'}, 
-    { src: 'https://i.ibb.co/mvvpM6n/2.jpg'} 
-  ],
+{
+        original: "https://i.ibb.co/xDfpr1L/4.jpg",
+        thumbnail: "https://i.ibb.co/xDfpr1L/4.jpg",
+        
+},
 
-showNumOfRemainingPhotos: true
-};
+{
+  original: "https://i.ibb.co/hfqQNKQ/5.jpg",
+  thumbnail: "https://i.ibb.co/hfqQNKQ/5.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/k99F8Vn/8.jpg",
+  thumbnail: "https://i.ibb.co/k99F8Vn/8.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/2q7k9nM/7.jpg",
+  thumbnail: "https://i.ibb.co/2q7k9nM/7.jpg",
+  
+},
 
-const setting3 = {
-  width: '600px',
-  height: ['350px', '200px'],
-  layout: [1, 2, 1],
-  photos: [
-    { src: 'https://i.ibb.co/Vwf9SH4/1.jpg'}, 
-    { src: 'https://i.ibb.co/hfbHH5v/2.jpg'}, 
-    { src: 'https://i.ibb.co/KNZRKQG/3.jpg'}, 
-    { src: 'https://i.ibb.co/4m5Cqf1/4.jpg'}, 
-    { src: 'https://i.ibb.co/PYBcYts/5.jpg'}, 
-    { src: 'https://i.ibb.co/CmQt5GK/6.jpg'},
-    { src: 'https://i.ibb.co/8748RD5/7.jpg'}, 
-    { src: 'https://i.ibb.co/CPTCwf2/8.jpg'},
-    { src: 'https://i.ibb.co/k4tGKqK/10.jpg'} 
-  ],
 
-showNumOfRemainingPhotos: true
-};
+]
+
+const images1 =
+[{
+        original: "https://i.ibb.co/fSNyXyy/13.jpg",
+        thumbnail: "https://i.ibb.co/fSNyXyy/13.jpg",
+        
+},
+{
+        original: "https://i.ibb.co/r0rw1yv/12.jpg",
+        thumbnail: "https://i.ibb.co/r0rw1yv/12.jpg",
+        
+},
+
+{
+        original: "https://i.ibb.co/RN2jcLN/1.jpg",
+        thumbnail: "https://i.ibb.co/RN2jcLN/1.jpg",
+        
+},
+
+{
+  original: "https://i.ibb.co/WtLXVff/11.jpg",
+  thumbnail: "https://i.ibb.co/WtLXVff/11.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/FbCT0Sz/4.jpg",
+  thumbnail: "https://i.ibb.co/FbCT0Sz/4.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/ByP3nBP/3.jpg",
+  thumbnail: "https://i.ibb.co/ByP3nBP/3.jpg",
+  
+},
+
+
+]
+
+
+const images3 =
+[{
+        original: "https://i.ibb.co/Vwf9SH4/1.jpg",
+        thumbnail: "https://i.ibb.co/Vwf9SH4/1.jpg",
+        
+},
+{
+        original: "https://i.ibb.co/hfbHH5v/2.jpg",
+        thumbnail: "https://i.ibb.co/hfbHH5v/2.jpg",
+        
+},
+
+{
+        original: "https://i.ibb.co/KNZRKQG/3.jpg",
+        thumbnail: "https://i.ibb.co/KNZRKQG/3.jpg",
+        
+},
+
+{
+  original: "https://i.ibb.co/4m5Cqf1/4.jpg",
+  thumbnail: "https://i.ibb.co/4m5Cqf1/4.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/PYBcYts/5.jpg",
+  thumbnail: "https://i.ibb.co/PYBcYts/5.jpg",
+  
+},
+{
+  original: "https://i.ibb.co/CmQt5GK/6.jpg",
+  thumbnail: "https://i.ibb.co/CmQt5GK/6.jpg",
+  
+},
+
+
+]
 
 
 function Events() {
@@ -112,7 +168,8 @@ function Events() {
       </div>
 
     <div className="collage">
-      <ReactPhotoCollage {...setting} /> 
+
+<ImageGallery items={images1} />;
     </div>
 
     <div class="box-bg">
@@ -153,8 +210,9 @@ function Events() {
                     </div>
      </div>
 
-    <div className="collage">
-      <ReactPhotoCollage {...setting2} /> 
+     <div className="collage">
+
+<ImageGallery items={images2} />;
     </div>
 
     <div class="box-bg">
@@ -173,8 +231,9 @@ function Events() {
                     </div>
      </div>
 
-    <div className="collage">
-      <ReactPhotoCollage {...setting3} /> 
+     <div className="collage">
+
+<ImageGallery items={images3} />;
     </div>
 
     <div class="box-bg">

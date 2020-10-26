@@ -32,7 +32,7 @@ const images =
   
 },
 {
-  original: "https://i.ibb.co/5hq1RCD/abeba980-47cb-4842-bedf-9c6e8d3453d8.jpg",
+  original: "https://i.ibb.co/Ky9D0b9/42353387-0c5a-4e08-96eb-55a7eb8845fd.jpg",
   thumbnail: "https://i.ibb.co/Ky9D0b9/42353387-0c5a-4e08-96eb-55a7eb8845fd.jpg",
   
 },
@@ -75,7 +75,7 @@ function Nastupi() {
                             
      </div>
 
-     <div className="gallery">
+     <div className="collage">
 
         <ImageGallery items={images} />;
      </div>
