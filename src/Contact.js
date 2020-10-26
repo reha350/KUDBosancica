@@ -18,11 +18,9 @@ function Contact() {
                 <ul className="time-list">
 
                   <li>
-                    Die Proben finden Sonntags in der Feuerwache Ganghoferstr. 41 statt.
-                  </li>
-                  <li>
-                    Od 12:30 do 17:30 
-                  </li>   
+                    Die Proben finden Sonntags in der  IG Feuerwache Ganghoferstr. 41 
+                    80339 München, von 12:30 Uhr bis 17:30 Uhr statt.
+                  </li> 
                 </ul>  
                   
                   
