@@ -8,6 +8,13 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.gallery-bg {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .fab {
   color: white !important;
 }

@@ -1,13 +1,35 @@
 import React from 'react';
 import './App.css';
-import { render } from "react-dom";
-import { ReactPhotoCollage } from "react-photo-collage";
 import kolacijada1 from "./images/kolacijada/1.jpg";
 import kolacijada2 from "./images/kolacijada/2.jpg";
 import kolacijada3 from "./images/kolacijada/3.jpg";
 import kolacijada4 from "./images/kolacijada/4.jpg";
+import Gallery from "react-photo-gallery";
 import { Link } from 'react-router-dom';
 
+
+const photos = [
+  {
+    src: 'https://i.ibb.co/6bRn3V2/6.jpg',
+    width: 1,
+    height: 1
+  },
+  {
+    src: 'https://i.ibb.co/dWcxwL2/3.jpg',
+    width: 1,
+    height: 1
+  },
+  {
+    src: 'https://i.ibb.co/dWcxwL2/3.jpg',
+    width: 1,
+    height: 1
+  },
+  {
+    src: 'https://i.ibb.co/dWcxwL2/3.jpg',
+    width: 1,
+    height: 1
+  }
+];
 
 
 function Events() {
@@ -55,6 +77,9 @@ function Events() {
                       
       </div>
 
+      <div class="gallery-bg">
+         <Gallery photos={photos} />;
+      </div>
     <div class="box-bg">
                    <div class="container"> 
                         <div class="box-a">
