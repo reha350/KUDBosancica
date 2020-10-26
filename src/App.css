@@ -85,18 +85,16 @@ nav {
 .SponsorLogo {
   position: relative;
   margin: 30px;
-  width: 250px;
+  width: 200px;
 }
 .SponsorLogo2 {
   position: relative;
   margin: 30px;
-  width: 70px;
+  width: 50px;
 }
 
 .s-list {
   list-style: none;
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
   margin: 0.5rem;
@@ -258,7 +256,7 @@ nav {
   .SponsorLogo {
     position: relative;
     margin: 20px;
-    width: 170px;
+    width: 200px;
   }
   
   .footer {
