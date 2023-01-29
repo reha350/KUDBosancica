@@ -269,7 +269,7 @@ function Events() {
 
                           
                           <h3 className="h3">  
-                            Tradicionalni kulturno zabavni sadržaj u srcu Bavarske je naravno Oktoberfest, koji okuplja ljude iz cijelog svijeta. Drugog
+                            Tradicionalni. kulturno zabavni sadržaj u srcu Bavarske je naravno Oktoberfest, koji okuplja ljude iz cijelog svijeta. Drugog
                             dana Oktoberfesta se održava tradicionalni Trachtenumzug, odnosno defile narodnih nošnji koji je sastavni dio Oktoberfesta. 
                             Da se bosansko-hercegovačka zastava zavihori i na ovome značajnom događaju, pobrinulo se rukovodstvo i naši članovi, i to ne 
                             jednom, već dva puta. 
